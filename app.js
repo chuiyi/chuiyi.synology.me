@@ -28,7 +28,7 @@ app.use('/users', users);
 var folder_path = 'X:\\';
 var contentDisposition = require('content-disposition');
 var scan = require('./scan');
-var tree = scan(folder_path, 'files');
+var tree = scan(folder_path, '');
 console.log(tree);
 app.use('/', express.static(path.join(__dirname, 'frontend')));
 app.use('/files', express.static(process.cwd(), {

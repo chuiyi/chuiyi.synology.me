@@ -23,9 +23,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
 
 var folder_path = 'X:\\';
+// var folder_path = '.';
 var contentDisposition = require('content-disposition');
 var scan = require('./scan');
 var tree = scan(folder_path, '');
